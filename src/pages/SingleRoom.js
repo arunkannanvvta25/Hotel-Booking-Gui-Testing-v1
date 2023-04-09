@@ -32,8 +32,8 @@ class SingleRoom extends Component {
       <div>
         <StyledHero image={main}>
           <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
-              back to rooms
+            <Link to="/booked" className="btn-primary">
+              Book
             </Link>
           </Banner>
         </StyledHero>

@@ -29,7 +29,7 @@ function FeedbackContainer() {
           {/* roomtype */}
           <div className="single-extras">
             <label htmlFor="type">Room Type:</label>
-            <input type="text"></input>
+            <input type="text" id="feedbackRoomType"></input>
           </div>
           {/* end */}
 
@@ -51,8 +51,9 @@ function FeedbackContainer() {
                 type="radio"
                 name="recommend"
                 id="recommend"
+                className="recommend"
               />
-              <label htmlFor="recommend">Will recommend to a friend</label>
+              <label >Will recommend to a friend</label>
             {/* </div>
 
             <div className="single-extras"> */}
@@ -60,13 +61,14 @@ function FeedbackContainer() {
                 type="radio"
                 name="notRecommend"
                 id="notRecommend"
+                className="notRecommend"
               />
-              <label htmlFor="notRecommend">Will not recommend to a friend</label>
+              <label >Will not recommend to a friend</label>
             </div>
           <div className="single-extras">
           <label>
       Write your post:
-      <textarea name="postContent" rows={4} cols={40} />
+      <textarea name="postContent" rows={8} cols={80} id="feedbackTextArea" />
     </label>
     </div>
         </form>

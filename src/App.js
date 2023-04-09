@@ -8,7 +8,7 @@ import Rooms from "./pages/Rooms";
 import NotFound from "./pages/NotFound";
 import SingleRoom from "./pages/SingleRoom";
 import Feedback from "./pages/Feedback";
-
+import BookedFeedback from "./pages/BookedFeedback";
 function App() {
   return (
     <RoomProvider>
@@ -18,6 +18,7 @@ function App() {
         <Route exact path="/rooms" element={<Rooms />} />
         <Route exact path="/rooms/:slug" element={<SingleRoom />} />
         <Route exact path="/feedback" element={<Feedback />} />
+        <Route exact path="/booked" element={<BookedFeedback />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </RoomProvider>
