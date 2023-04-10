@@ -15,7 +15,7 @@ class NavBar extends Component {
           <div className="nav-center">
             <div className="nav-header">
               <Link to={{ pathname: "/" }}>
-                <img src={logo} alt="Hotel Resort" />
+                <img src={logo} alt="Hotel Resort" id="homePageButton" />
               </Link>
               <button
                 className="nav-btn"
@@ -44,7 +44,7 @@ class NavBar extends Component {
               </li>
             </ul>
             {/* <label className="Nav-Search-Text nav-links">Search</label> */}
-            <input type="text" className="Nav-SearchBox"></input>
+            <input type="text" className="Nav-SearchBox" id="globalSearch"></input>
           </div>
         </nav>
       </>

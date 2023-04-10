@@ -92,14 +92,14 @@ function RoomFilter({ rooms }) {
             <label htmlFor="size">room size</label>
             <div className="size-inputs">
               <input
-                type="number"
+                type="text"
                 className="size-input"
                 name="minSize"
                 value={minSize}
                 onChange={(e) => handleOptionChange(e)}
               />
               <input
-                type="number"
+                type="text"
                 className="size-input"
                 name="maxSize"
                 value={maxSize}

@@ -32,7 +32,7 @@ class SingleRoom extends Component {
       <div>
         <StyledHero image={main}>
           <Banner title={`${name} room`}>
-            <Link to="/booked" className="btn-primary">
+            <Link to="/booked" className="btn-primary" id="booked-btn">
               Book
             </Link>
           </Banner>

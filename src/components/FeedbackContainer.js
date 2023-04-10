@@ -22,13 +22,12 @@ function FeedbackContainer() {
   const submitFeedback =() => window.location.reload();
   return (
     <div>
-      {/* <FeedbackFilter rooms={rooms} /> */}
-      {/* <RoomList rooms={sortedRooms} /> */}
+      <div>
       <section className="filter-container">
         <form className="filter-forms">
           {/* roomtype */}
           <div className="single-extras">
-            <label htmlFor="type">Room Type:</label>
+            <label htmlFor="type" id="RoomTypeLabel">Room Type:</label>
             <input type="text" id="feedbackRoomType"></input>
           </div>
           {/* end */}
@@ -37,14 +36,10 @@ function FeedbackContainer() {
 
           <div className="single-extras"> 
         <label>Rating:</label>
-          <Rating
-        onClick={handleRating}
-        onPointerEnter={onPointerEnter}
-        onPointerLeave={onPointerLeave}
-        onPointerMove={onPointerMove}
-        /* Available Props */
-      />
+        <input type="Number" id="rating"></input>
+          
       </div>
+
 
             <div className="single-extras">
               <input
@@ -73,7 +68,9 @@ function FeedbackContainer() {
     </div>
         </form>
       </section>
+
       <button type="submit" className="feedbackSubmit" id="feedbackSubmit" onClick={submitFeedback}>Submit Feedback</button>
+    </div>
     </div>
   );
 }

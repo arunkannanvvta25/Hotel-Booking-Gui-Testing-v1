@@ -15,14 +15,12 @@ class Home extends Component {
             title="luxurious rooms"
             subtitle="deluxe rooms starting at $299"
           >
-            <Link to="/rooms" className="btn-primary">
+            <Link to="/rooms" className="btn-primary" id="OurRoomsBtn">
               Our Rooms
             </Link>
           </Banner>
         </Hero>
-
         <Services />
-
         <FeaturedRooms />
       </div>
     );
